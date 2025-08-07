@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 10px;
+
+    color: #000;
+}
+
+.parents{
+    border-radius: 15px 0 0 15px;
+    border: 1px solid #000;
+
+    background: #d0e4fa;
+
+    overflow-y: scroll;
+
+    max-height: 300px;
+}
+
+.child{
+    display: inline-block;
+
+    max-width: 240px;
+
+    border-radius: 9px;
+    box-shadow:inset 0 0 7px 2px  #ffffff;
+
+    background: antiquewhite;
+
+    padding: 11px;
+    margin: 15px;
+}
