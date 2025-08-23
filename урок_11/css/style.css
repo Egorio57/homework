@@ -1,0 +1,41 @@
+body {
+    background-color: #000000;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.title{
+    font-size: 70px;
+    color: #70a800;
+    border-bottom: #fff 3px solid;
+    position: relative;
+}
+
+.title::after, .title::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.title::before{
+    background-color: red;
+
+    transform: translate(-110px, -10px);
+}
+
+.title::after{
+    background-color: blue;
+
+    transform: translate(10px, -10px);
+}

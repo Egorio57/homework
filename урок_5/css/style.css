@@ -1,0 +1,28 @@
+.openSans{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+}
+
+.line-through{
+    text-decoration: line-through;
+    font-weight: 600;
+}
+
+.Upper{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.distance-30{
+    color: #9900ff;
+    text-decoration: overline wavy;
+    word-spacing: 30px;
+} 
+
+.distance-5{
+    text-decoration: underline double;
+    letter-spacing: 5px;
+}
