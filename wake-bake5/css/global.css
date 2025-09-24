@@ -1,0 +1,65 @@
+:root {
+  --text-color: #312c27;
+  --main-bg: #fff9f4;
+  --main-color-btn: #ffa55c;
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: var(--text-color);
+  background-color: var(--main-bg);
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  background-color: var(--main-bg);
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1310px;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.sign-up-on-course {
+  display: block;
+  border-radius: 60px;
+  padding: 18px 36px;
+  width: 358px;
+  height: 62px;
+  background-color: var(--main-color-btn);
+  line-height: 160%;
+  text-align: center;
+  font-weight: 500;
+
+  transition: all 0.4s;
+}
+
+.sign-up-on-course:hover {
+  background-color: #ff9138;
+}
+
+.hero__controls--mobile {
+  display: none;
+}
+
+.title {
+  font-family: "Gabriola";
+  font-weight: 400;
+  font-size: 74px;
+  line-height: 82%;
+  color: #1f1711;
+}
