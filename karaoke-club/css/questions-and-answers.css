@@ -1,0 +1,135 @@
+.questions-and-answers {
+  padding: 100px 0;
+}
+
+.questions-and-answers__inner {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+}
+
+.questions-and-answers__info {
+  grid-column: -1/1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.questions-and-answers__sub-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 45px;
+}
+
+.accordion-list__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+
+  padding: 25px;
+  background-color: #282b32;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.accordion-list__control:hover {
+  background: #343740;
+}
+
+.accordion-list__control-title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+}
+
+.accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion-list__control-icon {
+  box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.21);
+  background: #34373f;
+  padding: 10px 12px;
+}
+
+.accordion-list__control-icon svg {
+  vertical-align: middle;
+}
+
+.accordion-list__item--opened
+  .accordion-list__control
+  .accordion-list__control-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-list__item--opened
+  .accordion-list__control
+  .accordion-list__control-icon
+  svg
+  path {
+  stroke: #606571;
+}
+
+.accordion-content__text:first-child {
+  margin-top: 20px;
+}
+
+.accordion-content__text {
+  font-size: 14px;
+  line-height: 194%;
+  letter-spacing: 0.03em;
+  color: #c5c5c5;
+  padding-left: 25px;
+}
+
+.accordion-list__content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.7s ease;
+}
+
+.accordion-list__item--opened .accordion-list__content {
+  max-height: 101px;
+}
+
+.accordion-content {
+  opacity: 1;
+}
+
+.questions-and-answers__img {
+  background: url("../img/content/slippers.png") 50% 50% / cover no-repeat;
+  box-shadow: inset -39px 0 27px 12px #191b20;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.questions-and-answers__img-text {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 162%;
+  max-width: 520px;
+}
+
+.questions-and-answers__img-text span {
+  color: #f69020;
+}
+
+.questions-and-answers__btn {
+  background: linear-gradient(141deg, #ea422a 0%, #f69020 47.92%, #ffc619 100%);
+  width: 270px;
+  padding: 25px;
+  text-align: center;
+}

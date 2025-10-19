@@ -1,0 +1,18 @@
+.footer {
+  padding: 47px 22px;
+  background-color: #131517;
+  z-index: 10;
+}
+
+.footer__btn {
+  padding: 23px 30px;
+  border: 1px solid #f69020;
+  color: var(--text-color);
+  transition: all 0.7s;
+  background: linear-gradient(141deg, #ea422a 0%, #f69020 47.92%, #ffc619 100%);
+}
+
+.footer__btn:hover {
+  color: var(--text-black);
+  background-color: var(--text-color);
+}

@@ -1,0 +1,422 @@
+.scroll-up {
+  display: none;
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  padding: 23.5px 25px;
+  border-radius: 100%;
+  z-index: 1000;
+  background-color: #2e3441;
+  transform: rotate(180deg);
+}
+
+.scroll-up__img path{
+  stroke: #606571;
+  transition: all 0.7s;
+}
+
+.scroll-up:hover path{
+  stroke: #ffc619;
+}
+
+.scroll-up__img svg{
+  vertical-align: middle;
+}
+
+.scroll-up--show{
+  display: block;
+}
+
+@media (max-width: 1700px) {
+  /* book-a-gym */
+  .book-a-gym__counting-numbers {
+    right: -55px;
+  }
+}
+
+@media (max-width: 1415px) {
+  /* book-a-gym */
+  .book-a-gym__title {
+    font-size: 65px;
+  }
+
+  .book-a-gym__counting-numbers {
+    right: -5px;
+  }
+
+  .our-halls__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tab-controls{
+    justify-content: center;
+  }
+  .halls__list{
+    justify-content: center;
+    align-items: center;
+  }
+  .tab-content--show{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-halls__info{
+    align-items: center;
+  }
+}
+
+@media (max-width: 1345px) {
+  /* hero */
+  .hero__title {
+    font-size: 45px;
+    width: fit-content;
+  }
+  .hero__over-title {
+    font-size: 28px;
+    width: fit-content;
+  }
+
+  .hero__list-advants {
+    flex-direction: column;
+    width: fit-content;
+    justify-content: flex-start;
+  }
+
+  .hero__list-advants-item {
+    justify-content: start;
+  }
+
+  .hero__circle {
+    bottom: 12%;
+    left: 25%;
+  }
+
+  .hero__girl {
+    bottom: -15%;
+    left: 43%;
+  }
+
+  .hero__girl img {
+    height: 600px;
+  }
+
+  .hero__tg {
+    display: none;
+  }
+
+  .hero__advantages-list {
+    grid-template-columns: auto auto;
+  }
+
+  .hero__advantages-list-item {
+    justify-content: flex-start;
+  }
+  /* book-a-gym */
+  .book-a-gym__title {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 1300px) {
+  /* header-top */
+
+  .nav__list {
+    gap: 20px;
+  }
+  .nav__list-block-1 {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1225px) {
+  .advantages__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .advantages__img img {
+    top: 0px;
+  }
+}
+
+@media (max-width: 1150px) {
+  /* header-top */
+
+  .nav__list-marker p {
+    display: none;
+  }
+  .nav__list-telphone p {
+    display: none;
+  }
+
+  /* book-a-gym */
+  .book-a-gym__title {
+    font-size: 36px;
+  }
+
+  .book-a-gym__pagination {
+    top: 95px;
+  }
+
+  /* questions-and-answers */
+
+  .questions-and-answers__inner {
+    grid-template-columns: auto;
+  }
+
+  .questions-and-answers__img {
+    gap: 25px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  /* .header__top */
+
+  .header__top-img img {
+    width: 170px;
+    height: 60px;
+  }
+
+  /* advantages */
+  .advantages__list-item {
+    padding: 10px;
+  }
+
+  .advantages__inner {
+    grid-template-columns: auto;
+    gap: 15px;
+  }
+
+  .advantages__img img {
+    display: none;
+  }
+
+  .advantages__btn {
+    max-width: 100%;
+    width: 100%;
+  }
+  /* book-a-gym */
+  .book-a-gym__inner {
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    margin-bottom: 80px;
+  }
+
+  .book-a-gym__pagination {
+    top: 5px;
+  }
+
+  .book-a-gym__counting-numbers {
+    right: 65px;
+  }
+}
+
+@media (max-width: 800px) {
+  /* .header__top */
+  .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background: #282b32;
+    box-shadow: 0 12px 27px 0 #000;
+    padding: 20vh 20px 29px;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s;
+  }
+
+  .nav__list {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .burger-menu--open .nav {
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+  }
+  .burger-menu {
+    display: flex;
+  }
+
+  .header__top-img {
+    z-index: 10000;
+  }
+
+  .nav__list-marker p {
+    display: block;
+  }
+  .nav__list-telphone p {
+    display: block;
+  }
+
+  .nav__list-block-1,
+  .nav__list-block-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  /* hero */
+
+  .hero__advantages-list {
+    grid-template-columns: auto;
+  }
+
+  .hero__girl {
+    display: none;
+  }
+
+  .hero__circle {
+    left: 40%;
+  }
+
+  /* footer */
+  .footer__btn {
+    padding: 12px 15px;
+  }
+
+  /* advantages */
+
+  .advantages__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .advantages__list-item {
+    max-width: 100%;
+  }
+
+  .advantages__title {
+    font-size: 36px;
+  }
+
+  .advantages__sub-title {
+    font-size: 18px;
+  }
+
+  /* book-a-gym */
+
+  .book-a-gym__counting-numbers {
+    right: 30px;
+  }
+
+  /* questions-and-answers */
+  .questions-and-answers__title {
+    font-size: 36px;
+  }
+
+  .questions-and-answers__sub-title {
+    font-size: 18px;
+  }
+
+  .our-halls__title {
+    font-size: 36px;
+  }
+  .our-halls__sub-title{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  .book-a-gym__counting-numbers {
+    right: 0px;
+  }
+  /* questions-and-answers */
+  .questions-and-answers__img-text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 460px) {
+  /* header-top */
+  .modal-window-sign__title {
+    font-size: 12vw;
+  }
+
+  .modal-map {
+    width: 260px;
+    height: 200px;
+  }
+  .header__top-inner {
+    gap: 40px;
+  }
+
+  /* hero */
+
+  .hero__over-title {
+    font-size: 18px;
+  }
+
+  .hero__title {
+    font-size: 36px;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__list-advants {
+    max-width: 200px;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .hero__advantages-list-item {
+    padding: 5px;
+  }
+
+  .hero__advantages-list-item img {
+    width: 35px;
+    height: auto;
+  }
+
+  .hero__advantages-list-item p {
+    font-size: 14px;
+  }
+
+  .hero__title::after {
+    width: fit-content;
+  }
+
+  /* footer */
+  .footer__btn {
+    display: none;
+  }
+
+  /* advanyges */
+  .advantages__title {
+    font-size: 28px;
+  }
+
+  /* book-a-gym */
+  .book-a-gym__title {
+    font-size: 24px;
+  }
+
+  .book-a-gym__sub-title {
+    font-size: 18px;
+  }
+  .book-a-gym__counting-numbers {
+    right: 110px;
+  }
+}
+
+@media (max-width: 380px) {
+  .book-a-gym__counting-numbers {
+    right: 10vw;
+  }
+}

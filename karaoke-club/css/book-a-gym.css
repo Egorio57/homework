@@ -1,0 +1,121 @@
+/* Book a gym */
+.book-a-gym {
+  padding: 100px 0;
+  background-color: #131517;
+}
+.book-a-gym__inner {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.book-a-gym__info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 50px;
+  width: fit-content;
+}
+
+.book-a-gym__sub-title {
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.book-a-gym__controls {
+  position: relative;
+  width: 250px;
+}
+
+.book-a-gym__pagination {
+  width: fit-content;
+  position: absolute;
+  top: 110px;
+  left: 110px;
+}
+
+.book-a-gym__prev,
+.book-a-gym__next {
+  border-radius: 50%;
+  padding: 35px;
+  background-color: #2e3441;
+
+  transition: all 0.7s;
+}
+
+.book-a-gym__prev:hover,
+.book-a-gym__next:hover {
+  background-color: #606571;
+}
+
+.book-a-gym__prev::after,
+.book-a-gym__next::after {
+  font-size: initial;
+  color: #606571;
+
+  transition: all 0.7s;
+}
+
+.book-a-gym__prev:hover::after,
+.book-a-gym__next:hover::after {
+  color: #2e3441;
+}
+
+.book-a-gym__slide {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  opacity: 0.5;
+  transition: all 0.7s;
+
+  position: relative;
+}
+
+.book-a-gym__slide > img {
+  position: relative;
+  width: 250px;
+}
+.swiper-slide-active{
+  opacity: 1;
+  transform: scale(0.94);
+}
+
+.swiper-slide-active .book-a-gym__slide-img{
+background: url(../img/content/slider-2/Рамка\ айфона.png) 50% 50% /cover no-repeat;
+}
+
+.book-a-gym__counting-numbers{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+
+  padding: 22.5px 30px;
+  background-color: #F69020;
+  border-radius: 50%;
+
+  display: none;
+}
+
+.swiper-slide-active .book-a-gym__counting-numbers{
+  display: block;
+}
+
+.book-a-gym__sub-slide {
+  display: flex;
+  gap: 16px;
+}
+
+.book-a-gym__sub-slide img {
+  width: 40px;
+  height: 40px;
+}
+
+.book-a-gym__sub-slide p {
+  max-width: 210px;
+}
+
+.book-a-gym__sub-slide-text a{
+  color: #F69020;
+}

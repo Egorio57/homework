@@ -1,0 +1,115 @@
+/* advantages */
+
+.advantages {
+  padding: 100px 0;
+}
+
+.advantages__inner {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.advantages__info {
+  grid-column: -1/1;
+  margin-bottom: 45px;
+}
+
+.advantages__sub-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.advantages__list-item {
+  max-width: 433px;
+  max-height: 298px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 19px;
+
+  padding: 35px 5px 35px 35px;
+
+  background-color: #282b32;
+}
+
+.advantages__list-item:nth-child(even) {
+  background-color: #202124;
+}
+
+.advantages__list-item > img {
+  width: 80px;
+  height: 80px;
+}
+
+.advantages__list-item  img {
+ vertical-align: sub;
+}
+
+.advantages__list-item > h6 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.advantages__list-description-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.adl__description-item {
+  display: flex;
+  gap: 10px;
+}
+
+.adl__description-item .advantages-orange,
+.adl__description-item > p > span {
+  color: #f69020;
+}
+
+.adl__description-item > p {
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #c5c5c5;
+
+  max-width: 326px;
+}
+
+.advantages__img {
+  background: url("../img/content/bg-for-microphone-2.png") 50% 50% / cover
+    no-repeat;
+  box-shadow: inset -10px -40px -3px 52px #191b20;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.advantages__img img {
+  position: absolute;
+  top: -200px;
+}
+
+.advantages__btn {
+  background: linear-gradient(141deg, #ea422a 0%, #f69020 47.92%, #ffc619 100%);
+  padding: 25px 60px;
+  max-width: 82%;
+}

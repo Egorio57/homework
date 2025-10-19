@@ -1,0 +1,11 @@
+@import url("./global.css");
+@import url("./modals.css");
+@import url("./header.css");
+
+@import url("./halls.css");
+@import url("./advantages.css");
+@import url("./book-a-gym.css");
+@import url("./questions-and-answers.css");
+/* footer */
+@import url("./footer.css");
+@import url("./media.css");

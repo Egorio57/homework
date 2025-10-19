@@ -1,0 +1,111 @@
+/* ========================= */
+
+/* модалка с картой */
+
+.modal-window-map {
+  overflow: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s;
+  z-index: 100000;
+}
+
+.modal-window-map__inner {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-window-map--opened .modal-window-map {
+  overflow: visible;
+  visibility: visible;
+  z-index: 10000000;
+
+  opacity: 1;
+}
+
+.modal-window-map--opened .modal-window-map__inner {
+  background-color: #191b1fcc;
+}
+/* ========================= */
+/* модалка для связи */
+
+.modal-window-sign {
+  overflow: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s;
+  z-index: 100000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-window-sign__inner {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-window-sign__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: var(--text-color);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.modal-window-sign__title {
+  font-size: 55px;
+  color: var(--text-black);
+}
+
+.modal-window-sign__input {
+  width: 100%;
+  padding: 30px 15px;
+  border-radius: 12px;
+  background-color: var(--main-bg);
+  border: 1px solid #393c43;
+  color: var(--text-color);
+}
+
+.modal-window-sign__btn {
+  width: 100%;
+  padding: 30px 15px;
+
+  transform: scale(1);
+  transition: all 0.7s;
+  background: linear-gradient(141deg, #ea422a 0%, #f69020 47.92%, #ffc619 100%);
+}
+
+.modal-window-sign__btn:hover {
+  transform: scale(0.98);
+}
+
+.modal-window-sign--opened,
+.modal-window-map--opened {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.modal-window-sign--opened .modal-window-sign {
+  overflow: visible;
+  visibility: visible;
+  z-index: 100000000;
+  opacity: 1;
+}
+
+.modal-window-sign--opened .modal-window-sign__inner {
+  background-color: #191b1fcc;
+}
